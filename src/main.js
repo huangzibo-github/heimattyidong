@@ -8,13 +8,8 @@ import './utils/validation.js'
 // import './styles/base.less'
 import 'normalize.css'
 import 'amfe-flexible'
-import { NavBar, Field, Button, Toast, CountDown } from 'vant'
+import './utils/datetime'
 Vue.config.productionTip = false
-Vue.use(NavBar)
-Vue.use(Field)
-Vue.use(Button)
-Vue.use(Toast)
-Vue.use(CountDown)
 
 new Vue({
   router,

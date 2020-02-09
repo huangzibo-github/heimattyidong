@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <!-- 根路由出口 -->
-    <router-view></router-view>
+    <keep-alive :include="$store.state.cachePages">
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
@@ -9,7 +11,9 @@
 export default {
   name: 'App',
   data () {
-    return {}
+    return {
+      cachePages: ['TabBar']
+    }
   }
 }
 </script>
